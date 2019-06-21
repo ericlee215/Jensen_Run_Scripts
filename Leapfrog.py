@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 n = 4000                                  
 P1 = [0,-.5, 0]
 P2 = [0,.5, 0]
-P3 = [1, .5, 0]
-P4 = [1, -.5, 0]
+P3 = [2, .5, 0]
+P4 = [2, -.5, 0]
 Gamma = np.array([0,0,1])
 dt = .01
 
@@ -98,6 +98,11 @@ Position4Y = Traj4[1,:]
 
 
 plt.plot(Position1X,Position1Y, 'c',Position2X,Position2Y, 'c',Position3X,Position3Y, 'r',Position4X,Position4Y, 'r')
+
+plt.title("Vortex Trajectories")
+plt.ylabel("Vortex Height")
+plt.xlabel("Distance Traveled")
+plt.show()
 
 
 
