@@ -11,6 +11,7 @@ def reorder(nturbines):
     
     myorder = ind
     nturbines = [nturbines[i] for i in myorder]
+    nturbines = nturbines[::-1]
     nturbines = np.asarray(nturbines)
 
     return nturbines
